@@ -1,0 +1,13 @@
+* {
+    background: radial-gradient(white, white);
+    color: black;
+    text-align: center;
+}
+
+html::before {
+    content: 'This website has been blocked.';
+}
+  
+body {
+    display: none !important;
+}

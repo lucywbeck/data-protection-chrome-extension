@@ -1,6 +1,21 @@
 {
     "manifest_version": 3,
     "name": "Data Protection Chrome Extension",
+    "version": "1.0",
     "description": "A tool that gives users more choice and freedom over how they protect their data privacy by allowing them to choose which websites they want to block based on a variety of security and privacy factors. Using our tool, users’ will have the ability to take a step in the right direction towards protecting their data privacy.",
-    "version": "1.0"
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.facebook.com/*",
+                "https://www.foxnews.com/*",
+                "https://www.cosmopolitan.com/*"
+            ],
+            "js": [
+                "scripts/content.js"
+            ],
+            "css": [
+                "scripts/content.css"
+            ]
+        }
+    ]
   }
