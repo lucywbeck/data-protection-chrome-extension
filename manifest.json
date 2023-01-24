@@ -17,5 +17,8 @@
                 "scripts/content.css"
             ]
         }
-    ]
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
   }
