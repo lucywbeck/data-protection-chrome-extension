@@ -1,5 +1,5 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Data Protection Chrome Extension",
     "version": "1.0",
     "description": "A tool that gives users more choice and freedom over how they protect their data privacy by allowing them to choose which websites they want to block based on a variety of security and privacy factors. Using our tool, users’ will have the ability to take a step in the right direction towards protecting their data privacy.",
@@ -19,8 +19,9 @@
         }
     ],
     "background": {
-        "service_worker": "background.js"
+        "scripts": ["background.js"]
     },
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
     "action": {
         "default_popup": "popup/popup.html"
     }
