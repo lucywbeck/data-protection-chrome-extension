@@ -9,10 +9,10 @@ let blockedUrlCounter = 0;
 setInterval(() => {
     chrome.runtime.sendMessage({ data: document.title }, function (response) {
         blockedUrlCounter = response;
-        console.log(`Number of blocked URLs: ${blockedUrlCounter}`);
+        console.log(`Number of trackers blocked: ${blockedUrlCounter}`);
     });
     
-    trackers.textContent = `Number of blocked URLs: ${blockedUrlCounter}`;
+    trackers.textContent = `Number of trackers blocked: ${blockedUrlCounter}`;
     trackers.hidden = false;
 
     if (blockedUrlCounter > 5) {

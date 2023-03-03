@@ -1,7 +1,7 @@
 {
-    "name": "Data Protection Chrome Extension",
+    "name": "Tracker Blocker",
     "version": "1.0",
-    "description": "A tool that gives users more choice and freedom over how they protect their data privacy by allowing them to choose which websites they want to block based on a variety of security and privacy factors. Using our tool, users’ will have the ability to take a step in the right direction towards protecting their data privacy.",
+    "description": "A tool that blocks web trackers from accessing user data and suggests whether or not it is safe to continue viewing a website.",
     "manifest_version": 2,
     "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
     "content_scripts": [
