@@ -2,7 +2,7 @@ console.log("This is a popup!");
 
 const trackers = document.getElementById('trackers');
 const recommendation = document.getElementById('recommendation');
-let recommendationTextContent = "Based on our research, we believe that it is safe to continue viewing this website";
+let recommendationTextContent = "We have found normal levels of trackers on this particular website.\n\nTherefore, it is safe to proceed further.";
 let blockedUrlCounter = 0;
 
 
@@ -15,8 +15,8 @@ setInterval(() => {
     trackers.textContent = `Number of trackers blocked: ${blockedUrlCounter}`;
     trackers.hidden = false;
 
-    if (blockedUrlCounter > 5) {
-        recommendationTextContent = "Based on our research, we believe that it is not safe to continue viewing this website"
+    if (blockedUrlCounter > 20) {
+        recommendationTextContent = "We have found alarming levels of trackers on this particular website.\n\nTherefore, we strongly advise against proceeding further."
     }
     
     recommendation.textContent = recommendationTextContent;

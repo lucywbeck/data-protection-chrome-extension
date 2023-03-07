@@ -1,5 +1,5 @@
 {
-    "name": "Tracker Blocker",
+    "name": "Safe Surf",
     "version": "1.0",
     "description": "A tool that blocks web trackers from accessing user data and suggests whether or not it is safe to continue viewing a website.",
     "manifest_version": 2,
